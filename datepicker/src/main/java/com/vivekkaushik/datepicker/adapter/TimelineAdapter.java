@@ -112,7 +112,7 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.ViewHo
             dayView.setTextColor(timelineView.getDayTextColor());
 
             dayView.setText(WEEK_DAYS[dayOfWeek].toUpperCase(Locale.US));
-            monthView.setText(MONTH_NAME[month].toUpperCase(Locale.US));
+            monthView.setText(MONTH_NAME[month-1].toUpperCase(Locale.US));
             dateView.setText(String.valueOf(day));
 
             if (selectedPosition == position) {
